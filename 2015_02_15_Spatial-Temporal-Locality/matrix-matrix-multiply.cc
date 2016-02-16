@@ -37,6 +37,7 @@ int main( int argc, char **argv ) {
   auto matrixC2 = blocked_matrix_multiply(16,matrixA,matrixB,matrix_dimension,trials);
 
   print_matrix(matrixC1,matrix_dimension);
+  cout << endl;
   print_matrix(matrixC2,matrix_dimension);
   
   return 0;

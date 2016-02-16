@@ -30,7 +30,7 @@ inline double* basic_matrix_multiply(const double* matrixA, double *matrixB, con
       for(int k=0;k<matrix_dimension;k++){
 	sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
       }
-      matrixC[idx(i,j)]=sum+i;
+      matrixC[idx(i,j)]=sum;
     }
   }
   auto stop = chrono::high_resolution_clock::now();
@@ -49,7 +49,7 @@ inline double* basic_matrix_multiply(const double* matrixA, double *matrixB, con
 	for(int k=0;k<matrix_dimension;k++){
 	  sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
 	}
-	matrixC[idx(i,j)]=sum+i;
+	matrixC[idx(i,j)]=sum;
       }
     }
     stop = chrono::high_resolution_clock::now();
@@ -99,7 +99,7 @@ inline double* blocked_matrix_multiply(const int& blocksize,
 	    sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
 	  }
 
-	  matrixC[idx(i,j)] += sum;
+	  matrixC[idx(i,j)] = sum;
 	}
       }
       
@@ -128,7 +128,7 @@ inline double* blocked_matrix_multiply(const int& blocksize,
   // 	    for(int k=0;k<matrix_dimension;k++){
   // 	      sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
   // 	    }
-  // 	    matrixC[idx(i,j)]=sum+i;
+  // 	    matrixC[idx(i,j)]=sum;
 	    
   // 	  }    
   // 	}
@@ -147,7 +147,7 @@ inline double* blocked_matrix_multiply(const int& blocksize,
 	      sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
 	    }
 
-	    matrixC[idx(i,j)] += sum;
+	    matrixC[idx(i,j)] = sum;
 	  }
 	}
       
