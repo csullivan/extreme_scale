@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "O0"
+./binaries/matrix-matrix-multiplyO0  20
+./binaries/matrix-matrix-multiplyO0  100
+./binaries/matrix-matrix-multiplyO0  1000
+./binaries/matrix-matrix-multiplyO0  1700
+echo "O1"
+./binaries/matrix-matrix-multiplyO1  20
+./binaries/matrix-matrix-multiplyO1  100
+./binaries/matrix-matrix-multiplyO1  1000
+./binaries/matrix-matrix-multiplyO1  1700
+echo "O2"
+./binaries/matrix-matrix-multiplyO2  20
+./binaries/matrix-matrix-multiplyO2  100
+./binaries/matrix-matrix-multiplyO2  1000
+./binaries/matrix-matrix-multiplyO2  1700
+echo "O3"
+./binaries/matrix-matrix-multiplyO3  20
+./binaries/matrix-matrix-multiplyO3  100
+./binaries/matrix-matrix-multiplyO3  1000
+./binaries/matrix-matrix-multiplyO3  1700

@@ -1,0 +1,36 @@
+O0
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 7.700e-05 1.400e-05 2.160e-05 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      20 7.600e-05 1.400e-05 2.160e-05 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 2.348e-02 1.630e-03 2.620e-03 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):     100 2.524e-02 1.630e-03 2.620e-03 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 1.434e+01 1.603e+00 2.602e+00 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):    1000 1.078e+01 1.603e+00 2.602e+00 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 7.426e+01 7.869e+00 1.278e+01 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):    1700 6.640e+01 7.869e+00 1.278e+01 
+O1
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 1.900e-05 1.400e-05 2.160e-05 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      20 1.800e-05 1.400e-05 2.160e-05 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 1.908e-03 1.630e-03 2.620e-03 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):     100 2.111e-03 1.630e-03 2.620e-03 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 1.143e+01 1.603e+00 2.602e+00 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):    1000 3.034e+00 1.603e+00 2.602e+00 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 5.033e+01 7.869e+00 1.278e+01 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):    1700 1.529e+01 7.869e+00 1.278e+01 
+O2
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 1.200e-05 1.400e-05 2.160e-05 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      20 1.400e-05 1.400e-05 2.160e-05 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 1.435e-03 1.630e-03 2.620e-03 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):     100 1.713e-03 1.630e-03 2.620e-03 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 9.313e+00 1.603e+00 2.602e+00 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):    1000 1.743e+00 1.603e+00 2.602e+00 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 5.779e+01 7.869e+00 1.278e+01 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):    1700 1.231e+01 7.869e+00 1.278e+01 
+O3
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 1.100e-05 1.400e-05 2.160e-05 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      20 1.200e-05 1.400e-05 2.160e-05 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 1.289e-03 1.630e-03 2.620e-03 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):     100 1.342e-03 1.630e-03 2.620e-03 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 1.159e+01 1.603e+00 2.602e+00 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):    1000 2.015e+00 1.603e+00 2.602e+00 
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 5.298e+01 7.869e+00 1.278e+01 
+Matrix dim (n), Blocked M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):    1700 1.047e+01 7.869e+00 1.278e+01 
