@@ -1,0 +1,7 @@
+Times are in seconds and are the cost per array element computed
+n	sep op  	in file 	sep file	w+1     	restrict
+10000	2.60e-09	1.30e-09	1.40e-09	1.50e-09	1.50e-09
+
+real	0m2.878s
+user	0m2.567s
+sys	0m0.065s

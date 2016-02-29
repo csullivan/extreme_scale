@@ -1,0 +1,1324 @@
+gcc -std=c99 -O3 -fivopts -flax-vector-conversions -funsafe-math-optimizations -msse4.2 -Wall -Werror  -fopt-info-vec-missed -c morth1.c
+morth1.c:44:5: note: not vectorized: multiple nested loops.
+morth1.c:44:5: note: bad loop form.
+morth1.c:84:5: note: not vectorized: loop contains function calls or data references that cannot be analyzed
+morth1.c:84:5: note: bad data references.
+morth1.c:76:5: note: not vectorized: loop contains function calls or data references that cannot be analyzed
+morth1.c:76:5: note: bad data references.
+morth1.c:68:5: note: not vectorized: loop contains function calls or data references that cannot be analyzed
+morth1.c:68:5: note: bad data references.
+morth1.c:60:5: note: not vectorized: multiple nested loops.
+morth1.c:60:5: note: bad loop form.
+
+morth1.c:126:5: note: misalign = 0 bytes of ref w[i_336]
+morth1.c:126:5: note: misalign = 0 bytes of ref v0[i_336]
+morth1.c:126:5: note: misalign = 0 bytes of ref v1[i_336]
+morth1.c:126:5: note: misalign = 0 bytes of ref v2[i_336]
+morth1.c:126:5: note: misalign = 0 bytes of ref v3[i_336]
+morth1.c:126:5: note: misalign = 0 bytes of ref w[i_336]
+morth1.c:126:5: note: virtual phi. skip.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: virtual phi. skip.
+morth1.c:126:5: note: virtual phi. skip.
+morth1.c:120:5: note: step unknown.
+morth1.c:120:5: note: step unknown.
+morth1.c:120:5: note: step unknown.
+morth1.c:120:5: note: step unknown.
+morth1.c:120:5: note: misalign = 0 bytes of ref w[i_323]
+morth1.c:120:5: note: misalign = 0 bytes of ref v0[i_323]
+morth1.c:120:5: note: misalign = 0 bytes of ref v1[i_323]
+morth1.c:120:5: note: misalign = 0 bytes of ref v2[i_323]
+morth1.c:120:5: note: misalign = 0 bytes of ref v3[i_323]
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: Build SLP failed: not grouped load _219 = v3[i_323];
+
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:49:5: note: not vectorized: multiple nested loops.
+morth1.c:49:5: note: bad loop form.
+
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_331]
+morth1.c:138:5: note: misalign = 0 bytes of ref *_200
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_331]
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:135:5: note: step unknown.
+morth1.c:135:5: note: misalign = 0 bytes of ref w[i_322]
+morth1.c:135:5: note: misalign = 0 bytes of ref *_190
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: reduc phi. skip.
+
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_329]
+morth1.c:138:5: note: misalign = 0 bytes of ref *_181
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_329]
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:135:5: note: step unknown.
+morth1.c:135:5: note: misalign = 0 bytes of ref w[i_321]
+morth1.c:135:5: note: misalign = 0 bytes of ref *_171
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: reduc phi. skip.
+
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_327]
+morth1.c:138:5: note: misalign = 0 bytes of ref *_162
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_327]
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:135:5: note: step unknown.
+morth1.c:135:5: note: misalign = 0 bytes of ref w[i_320]
+morth1.c:135:5: note: misalign = 0 bytes of ref *_152
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: reduc phi. skip.
+
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_325]
+morth1.c:138:5: note: misalign = 0 bytes of ref *_143
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_325]
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:135:5: note: step unknown.
+morth1.c:135:5: note: misalign = 0 bytes of ref w[i_319]
+morth1.c:135:5: note: misalign = 0 bytes of ref *_133
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:107:5: note: not vectorized: latch block not empty.
+morth1.c:107:5: note: bad loop form.
+morth1.c:34:8: note: not vectorized: not enough data-refs in basic block.
+morth1.c:34:23: note: not vectorized: not enough data-refs in basic block.
+morth1.c:36:2: note: not vectorized: not enough data-refs in basic block.
+morth1.c:39:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: w
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: v0
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: v1
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: v2
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: v3
+morth1.c:108:14: note: Failed to SLP the basic block.
+morth1.c:108:14: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:48:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not vectorized: no vectype for stmt: vect__130.196_818 = MEM[(float *)vectp_w.194_816];
+ scalar_type: vector(4) float
+morth1.c:136:9: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _802 = *_801;
+
+morth1.c:136:9: note: not consecutive access _798 = w[i_796];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _903 = *_902;
+
+morth1.c:136:9: note: not consecutive access _899 = w[i_808];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:136:9: note: not consecutive access _913 = *_912;
+
+morth1.c:136:9: note: not consecutive access _909 = w[i_907];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not vectorized: no vectype for stmt: vect__140.181_778 = MEM[(float *)vectp_w.179_776];
+ scalar_type: vector(4) float
+morth1.c:139:10: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _761 = *_760;
+
+morth1.c:139:10: note: not consecutive access _757 = w[i_755];
+
+morth1.c:139:10: note: not consecutive access w[i_755] = _763;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _881 = *_880;
+
+morth1.c:139:10: note: not consecutive access _877 = w[i_768];
+
+morth1.c:139:10: note: not consecutive access w[i_768] = _883;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:139:10: note: not consecutive access _892 = *_891;
+
+morth1.c:139:10: note: not consecutive access _888 = w[i_886];
+
+morth1.c:139:10: note: not consecutive access w[i_886] = _894;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:135:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not vectorized: no vectype for stmt: vect__149.166_736 = MEM[(float *)vectp_w.164_734];
+ scalar_type: vector(4) float
+morth1.c:136:9: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _722 = *_721;
+
+morth1.c:136:9: note: not consecutive access _718 = w[i_716];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _861 = *_860;
+
+morth1.c:136:9: note: not consecutive access _857 = w[i_726];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:136:9: note: not consecutive access _871 = *_870;
+
+morth1.c:136:9: note: not consecutive access _867 = w[i_865];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not vectorized: no vectype for stmt: vect__159.151_697 = MEM[(float *)vectp_w.149_695];
+ scalar_type: vector(4) float
+morth1.c:139:10: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _682 = *_681;
+
+morth1.c:139:10: note: not consecutive access _678 = w[i_676];
+
+morth1.c:139:10: note: not consecutive access w[i_676] = _684;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _839 = *_838;
+
+morth1.c:139:10: note: not consecutive access _835 = w[i_687];
+
+morth1.c:139:10: note: not consecutive access w[i_687] = _841;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:139:10: note: not consecutive access _850 = *_849;
+
+morth1.c:139:10: note: not consecutive access _846 = w[i_844];
+
+morth1.c:139:10: note: not consecutive access w[i_844] = _852;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:135:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not vectorized: no vectype for stmt: vect__168.136_602 = MEM[(float *)vectp_w.134_613];
+ scalar_type: vector(4) float
+morth1.c:136:9: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _631 = *_632;
+
+morth1.c:136:9: note: not consecutive access _640 = w[i_643];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _661 = *_166;
+
+morth1.c:136:9: note: not consecutive access _163 = w[i_626];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:136:9: note: not consecutive access _647 = *_642;
+
+morth1.c:136:9: note: not consecutive access _650 = w[i_651];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not vectorized: no vectype for stmt: vect__178.121_4 = MEM[(float *)vectp_w.119_6];
+ scalar_type: vector(4) float
+morth1.c:139:10: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _34 = *_41;
+
+morth1.c:139:10: note: not consecutive access _48 = w[i_50];
+
+morth1.c:139:10: note: not consecutive access w[i_50] = _31;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _199 = *_198;
+
+morth1.c:139:10: note: not consecutive access _146 = w[i_19];
+
+morth1.c:139:10: note: not consecutive access w[i_19] = _201;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:139:10: note: not consecutive access _183 = *_182;
+
+morth1.c:139:10: note: not consecutive access _179 = w[i_204];
+
+morth1.c:139:10: note: not consecutive access w[i_204] = _185;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:135:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:49:25: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not vectorized: no vectype for stmt: vect__187.106_167 = MEM[(float *)vectp_w.104_193];
+ scalar_type: vector(4) float
+morth1.c:136:9: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _256 = *_257;
+
+morth1.c:136:9: note: not consecutive access _262 = w[i_264];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _229 = *_228;
+
+morth1.c:136:9: note: not consecutive access _225 = w[i_242];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:136:9: note: not consecutive access _140 = *_238;
+
+morth1.c:136:9: note: not consecutive access _235 = w[i_233];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not vectorized: no vectype for stmt: vect__197.91_297 = MEM[(float *)vectp_w.89_303];
+ scalar_type: vector(4) float
+morth1.c:139:10: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _349 = *_350;
+
+morth1.c:139:10: note: not consecutive access _354 = w[i_363];
+
+morth1.c:139:10: note: not consecutive access w[i_363] = _347;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _194 = *_192;
+
+morth1.c:139:10: note: not consecutive access _189 = w[i_338];
+
+morth1.c:139:10: note: not consecutive access w[i_338] = _168;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:139:10: note: not consecutive access _150 = *_149;
+
+morth1.c:139:10: note: not consecutive access _173 = w[i_171];
+
+morth1.c:139:10: note: not consecutive access w[i_171] = _152;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:135:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:55:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:59:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:121:9: note: not vectorized: no vectype for stmt: vect__206.52_486 = MEM[(float *)vectp_w.50_488];
+ scalar_type: vector(4) float
+morth1.c:121:9: note: not vectorized: not enough data-refs in basic block.
+morth1.c:121:9: note: not consecutive access _524 = w[i_529];
+
+morth1.c:121:9: note: not consecutive access _523 = v0[i_529];
+
+morth1.c:121:9: note: not consecutive access _520 = v1[i_529];
+
+morth1.c:121:9: note: not consecutive access _517 = v2[i_529];
+
+morth1.c:121:9: note: not consecutive access _514 = v3[i_529];
+
+morth1.c:121:9: note: Failed to SLP the basic block.
+morth1.c:121:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:121:9: note: not consecutive access _320 = w[i_508];
+
+morth1.c:121:9: note: not consecutive access _772 = v0[i_508];
+
+morth1.c:121:9: note: not consecutive access _325 = v1[i_508];
+
+morth1.c:121:9: note: not consecutive access _324 = v2[i_508];
+
+morth1.c:121:9: note: not consecutive access _127 = v3[i_508];
+
+morth1.c:121:9: note: Failed to SLP the basic block.
+morth1.c:121:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:121:9: note: not consecutive access _216 = w[i_210];
+
+morth1.c:121:9: note: not consecutive access _218 = v0[i_210];
+
+morth1.c:121:9: note: not consecutive access _222 = v1[i_210];
+
+morth1.c:121:9: note: not consecutive access _131 = v2[i_210];
+
+morth1.c:121:9: note: not consecutive access _134 = v3[i_210];
+
+morth1.c:121:9: note: Failed to SLP the basic block.
+morth1.c:121:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:127:10: note: not vectorized: no vectype for stmt: vect__225.19_568 = MEM[(float *)vectp_w.17_590];
+ scalar_type: vector(4) float
+morth1.c:127:10: note: not vectorized: not enough data-refs in basic block.
+morth1.c:127:10: note: not consecutive access _456 = w[i_344];
+
+morth1.c:127:10: note: not consecutive access w[i_344] = _608;
+
+morth1.c:127:10: note: not consecutive access _455 = v0[i_344];
+
+morth1.c:127:10: note: not consecutive access _622 = v1[i_344];
+
+morth1.c:127:10: note: not consecutive access _619 = v2[i_344];
+
+morth1.c:127:10: note: not consecutive access _610 = v3[i_344];
+
+morth1.c:127:10: note: Failed to SLP the basic block.
+morth1.c:127:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:127:10: note: not consecutive access _594 = w[i_598];
+
+morth1.c:127:10: note: not consecutive access w[i_598] = _332;
+
+morth1.c:127:10: note: not consecutive access _593 = v0[i_598];
+
+morth1.c:127:10: note: not consecutive access _499 = v1[i_598];
+
+morth1.c:127:10: note: not consecutive access _505 = v2[i_598];
+
+morth1.c:127:10: note: not consecutive access _334 = v3[i_598];
+
+morth1.c:127:10: note: Failed to SLP the basic block.
+morth1.c:127:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:127:10: note: not consecutive access _331 = w[i_308];
+
+morth1.c:127:10: note: not consecutive access w[i_308] = _321;
+
+morth1.c:127:10: note: not consecutive access _221 = v0[i_308];
+
+morth1.c:127:10: note: not consecutive access _322 = v1[i_308];
+
+morth1.c:127:10: note: not consecutive access _17 = v2[i_308];
+
+morth1.c:127:10: note: not consecutive access _625 = v3[i_308];
+
+morth1.c:127:10: note: Failed to SLP the basic block.
+morth1.c:127:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:60:25: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:120:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:67:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:69:2: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:71:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:75:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:77:2: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:83:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:85:2: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:87:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:44:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:94:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:59:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:55:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:26:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:67:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:63:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:67:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:63:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:75:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:71:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:83:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:79:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:83:13: note: not vectorized: not enough data-refs in basic block.
+morth1.c:79:11: note: not vectorized: not enough data-refs in basic block.
+morth1.c:107:5: note: not vectorized: unsupported data-type complex double
+morth1.c:107:5: note: can't determine vectorization factor.
+morth1.c:105:18: note: not vectorized: not enough data-refs in basic block.
+morth1.c:114:1: note: not vectorized: not enough data-refs in basic block.
+morth1.c:102:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: w
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: v0
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: v1
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: v2
+morth1.c:108:14: note: SLP: step doesn't divide the vector-size.
+morth1.c:108:14: note: Unknown alignment for access: v3
+morth1.c:108:14: note: Failed to SLP the basic block.
+morth1.c:108:14: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:102:6: note: not vectorized: not enough data-refs in basic block.
+
+morth1.c:126:5: note: misalign = 0 bytes of ref w[i_55]
+morth1.c:126:5: note: misalign = 0 bytes of ref v0[i_55]
+morth1.c:126:5: note: misalign = 0 bytes of ref v1[i_55]
+morth1.c:126:5: note: misalign = 0 bytes of ref v2[i_55]
+morth1.c:126:5: note: misalign = 0 bytes of ref v3[i_55]
+morth1.c:126:5: note: misalign = 0 bytes of ref w[i_55]
+morth1.c:126:5: note: virtual phi. skip.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:126:5: note: not ssa-name.
+morth1.c:126:5: note: use not simple.
+morth1.c:126:5: note: virtual phi. skip.
+morth1.c:126:5: note: virtual phi. skip.
+morth1.c:120:5: note: step unknown.
+morth1.c:120:5: note: step unknown.
+morth1.c:120:5: note: step unknown.
+morth1.c:120:5: note: step unknown.
+morth1.c:120:5: note: misalign = 0 bytes of ref w[i_54]
+morth1.c:120:5: note: misalign = 0 bytes of ref v0[i_54]
+morth1.c:120:5: note: misalign = 0 bytes of ref v1[i_54]
+morth1.c:120:5: note: misalign = 0 bytes of ref v2[i_54]
+morth1.c:120:5: note: misalign = 0 bytes of ref v3[i_54]
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: Build SLP failed: not grouped load _20 = v3[i_54];
+
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:120:5: note: not ssa-name.
+morth1.c:120:5: note: use not simple.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: reduc phi. skip.
+morth1.c:120:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:129:1: note: not vectorized: not enough data-refs in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:121:9: note: not vectorized: no vectype for stmt: vect__10.395_161 = MEM[(float *)vectp_w.393_159];
+ scalar_type: vector(4) float
+morth1.c:121:9: note: not vectorized: not enough data-refs in basic block.
+morth1.c:121:9: note: not consecutive access _123 = w[i_122];
+
+morth1.c:121:9: note: not consecutive access _124 = v0[i_122];
+
+morth1.c:121:9: note: not consecutive access _127 = v1[i_122];
+
+morth1.c:121:9: note: not consecutive access _130 = v2[i_122];
+
+morth1.c:121:9: note: not consecutive access _133 = v3[i_122];
+
+morth1.c:121:9: note: Failed to SLP the basic block.
+morth1.c:121:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:121:9: note: not consecutive access _36 = w[i_147];
+
+morth1.c:121:9: note: not consecutive access _37 = v0[i_147];
+
+morth1.c:121:9: note: not consecutive access _109 = v1[i_147];
+
+morth1.c:121:9: note: not consecutive access _49 = v2[i_147];
+
+morth1.c:121:9: note: not consecutive access _210 = v3[i_147];
+
+morth1.c:121:9: note: Failed to SLP the basic block.
+morth1.c:121:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:121:9: note: not consecutive access _219 = w[i_218];
+
+morth1.c:121:9: note: not consecutive access _220 = v0[i_218];
+
+morth1.c:121:9: note: not consecutive access _223 = v1[i_218];
+
+morth1.c:121:9: note: not consecutive access _226 = v2[i_218];
+
+morth1.c:121:9: note: not consecutive access _229 = v3[i_218];
+
+morth1.c:121:9: note: Failed to SLP the basic block.
+morth1.c:121:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:127:10: note: not vectorized: no vectype for stmt: vect__25.362_76 = MEM[(float *)vectp_w.360_78];
+ scalar_type: vector(4) float
+morth1.c:127:10: note: not vectorized: not enough data-refs in basic block.
+morth1.c:127:10: note: not consecutive access _104 = w[i_106];
+
+morth1.c:127:10: note: not consecutive access w[i_106] = _91;
+
+morth1.c:127:10: note: not consecutive access _102 = v0[i_106];
+
+morth1.c:127:10: note: not consecutive access _99 = v1[i_106];
+
+morth1.c:127:10: note: not consecutive access _96 = v2[i_106];
+
+morth1.c:127:10: note: not consecutive access _93 = v3[i_106];
+
+morth1.c:127:10: note: Failed to SLP the basic block.
+morth1.c:127:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:127:10: note: not consecutive access _85 = w[i_86];
+
+morth1.c:127:10: note: not consecutive access w[i_86] = _10;
+
+morth1.c:127:10: note: not consecutive access _55 = v0[i_86];
+
+morth1.c:127:10: note: not consecutive access _144 = v1[i_86];
+
+morth1.c:127:10: note: not consecutive access _54 = v2[i_86];
+
+morth1.c:127:10: note: not consecutive access _51 = v3[i_86];
+
+morth1.c:127:10: note: Failed to SLP the basic block.
+morth1.c:127:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:127:10: note: not consecutive access _15 = w[i_13];
+
+morth1.c:127:10: note: not consecutive access w[i_13] = _28;
+
+morth1.c:127:10: note: not consecutive access _16 = v0[i_13];
+
+morth1.c:127:10: note: not consecutive access _19 = v1[i_13];
+
+morth1.c:127:10: note: not consecutive access _22 = v2[i_13];
+
+morth1.c:127:10: note: not consecutive access _26 = v3[i_13];
+
+morth1.c:127:10: note: Failed to SLP the basic block.
+morth1.c:127:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:116:6: note: not vectorized: not enough data-refs in basic block.
+
+morth1.c:138:5: note: versioning for alias required: can't determine dependence between *_20 and w[i_32]
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_32]
+morth1.c:138:5: note: misalign = 0 bytes of ref w[i_32]
+morth1.c:138:5: note: Unknown misalignment, is_packed = 0
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: not ssa-name.
+morth1.c:138:5: note: use not simple.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:138:5: note: virtual phi. skip.
+morth1.c:135:5: note: step unknown.
+morth1.c:135:5: note: misalign = 0 bytes of ref w[i_31]
+morth1.c:135:5: note: Unknown misalignment, is_packed = 0
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: num. args = 4 (not unary/binary/ternary op).
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: not ssa-name.
+morth1.c:135:5: note: use not simple.
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: reduc phi. skip.
+morth1.c:135:5: note: not vectorized: not enough data-refs in basic block.
+morth1.c:141:1: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not vectorized: no vectype for stmt: vect__7.479_115 = MEM[(float *)vectp_w.477_113];
+ scalar_type: vector(4) float
+morth1.c:136:9: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _99 = *_98;
+
+morth1.c:136:9: note: not consecutive access _95 = w[i_94];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:136:9: note: not consecutive access _131 = *_130;
+
+morth1.c:136:9: note: not consecutive access _55 = w[i_107];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:136:9: note: not consecutive access _141 = *_140;
+
+morth1.c:136:9: note: not consecutive access _137 = w[i_136];
+
+morth1.c:136:9: note: Failed to SLP the basic block.
+morth1.c:136:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: SLP: step doesn't divide the vector-size.
+morth1.c:139:10: note: Unknown alignment for access: w
+morth1.c:139:10: note: SLP: step doesn't divide the vector-size.
+morth1.c:139:10: note: Unknown alignment for access: *v_10(D)
+morth1.c:139:10: note: SLP: step doesn't divide the vector-size.
+morth1.c:139:10: note: Unknown alignment for access: w
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not vectorized: no vectype for stmt: vect__17.464_75 = MEM[(float *)vectp_w.462_73];
+ scalar_type: vector(4) float
+morth1.c:139:10: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _49 = *_50;
+
+morth1.c:139:10: note: not consecutive access _58 = w[i_3];
+
+morth1.c:139:10: note: not consecutive access w[i_3] = _60;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:139:10: note: not consecutive access _31 = *_106;
+
+morth1.c:139:10: note: not consecutive access _66 = w[i_65];
+
+morth1.c:139:10: note: not consecutive access w[i_65] = _7;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:139:10: note: not consecutive access _18 = *_17;
+
+morth1.c:139:10: note: not consecutive access _13 = w[i_11];
+
+morth1.c:139:10: note: not consecutive access w[i_11] = _20;
+
+morth1.c:139:10: note: Failed to SLP the basic block.
+morth1.c:139:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+morth1.c:131:6: note: not vectorized: not enough data-refs in basic block.
+gcc -std=c99 -O3 -fivopts -flax-vector-conversions -funsafe-math-optimizations -msse4.2 -Wall -Werror  -fopt-info-vec-missed -c morthr.c
+
+morthr.c:14:5: note: versioning for alias required: can't determine dependence between *_41 and *_38
+morthr.c:14:5: note: versioning for alias required: can't determine dependence between *_45 and *_38
+morthr.c:14:5: note: versioning for alias required: can't determine dependence between *_49 and *_38
+morthr.c:14:5: note: versioning for alias required: can't determine dependence between *_53 and *_38
+morthr.c:14:5: note: Unknown misalignment, is_packed = 0
+morthr.c:14:5: note: Unknown misalignment, is_packed = 0
+morthr.c:14:5: note: Unknown misalignment, is_packed = 0
+morthr.c:14:5: note: Unknown misalignment, is_packed = 0
+morthr.c:14:5: note: Unknown misalignment, is_packed = 0
+morthr.c:14:5: note: Unknown misalignment, is_packed = 0
+morthr.c:14:5: note: virtual phi. skip.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: not ssa-name.
+morthr.c:14:5: note: use not simple.
+morthr.c:14:5: note: virtual phi. skip.
+morthr.c:14:5: note: virtual phi. skip.
+morthr.c:8:5: note: step unknown.
+morthr.c:8:5: note: step unknown.
+morthr.c:8:5: note: step unknown.
+morthr.c:8:5: note: step unknown.
+morthr.c:8:5: note: Unknown misalignment, is_packed = 0
+morthr.c:8:5: note: Unknown misalignment, is_packed = 0
+morthr.c:8:5: note: Unknown misalignment, is_packed = 0
+morthr.c:8:5: note: Unknown misalignment, is_packed = 0
+morthr.c:8:5: note: Unknown misalignment, is_packed = 0
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: Build SLP failed: not grouped load _32 = *_31;
+
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: not ssa-name.
+morthr.c:8:5: note: use not simple.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: reduc phi. skip.
+morthr.c:8:5: note: not vectorized: not enough data-refs in basic block.
+morthr.c:17:1: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:9:9: note: not consecutive access _508 = *_507;
+
+morthr.c:9:9: note: not consecutive access _510 = *_509;
+
+morthr.c:9:9: note: not consecutive access _514 = *_513;
+
+morthr.c:9:9: note: not consecutive access _518 = *_517;
+
+morthr.c:9:9: note: not consecutive access _522 = *_521;
+
+morthr.c:9:9: note: Failed to SLP the basic block.
+morthr.c:9:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:9:9: note: not consecutive access _536 = *_535;
+
+morthr.c:9:9: note: not consecutive access _538 = *_537;
+
+morthr.c:9:9: note: not consecutive access _542 = *_541;
+
+morthr.c:9:9: note: not consecutive access _546 = *_545;
+
+morthr.c:9:9: note: not consecutive access _550 = *_549;
+
+morthr.c:9:9: note: Failed to SLP the basic block.
+morthr.c:9:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:9:9: note: not consecutive access _564 = *_563;
+
+morthr.c:9:9: note: not consecutive access _566 = *_565;
+
+morthr.c:9:9: note: not consecutive access _570 = *_569;
+
+morthr.c:9:9: note: not consecutive access _574 = *_573;
+
+morthr.c:9:9: note: not consecutive access _578 = *_577;
+
+morthr.c:9:9: note: Failed to SLP the basic block.
+morthr.c:9:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:9:9: note: not consecutive access _592 = *_591;
+
+morthr.c:9:9: note: not consecutive access _594 = *_593;
+
+morthr.c:9:9: note: not consecutive access _598 = *_597;
+
+morthr.c:9:9: note: not consecutive access _602 = *_601;
+
+morthr.c:9:9: note: not consecutive access _606 = *_605;
+
+morthr.c:9:9: note: Failed to SLP the basic block.
+morthr.c:9:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:9:9: note: not consecutive access _257 = *_256;
+
+morthr.c:9:9: note: not consecutive access _259 = *_258;
+
+morthr.c:9:9: note: not consecutive access _263 = *_262;
+
+morthr.c:9:9: note: not consecutive access _267 = *_266;
+
+morthr.c:9:9: note: not consecutive access _271 = *_270;
+
+morthr.c:9:9: note: Failed to SLP the basic block.
+morthr.c:9:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:9:9: note: not vectorized: no vectype for stmt: vect__14.52_355 = MEM[(float *)vectp_w.50_353];
+ scalar_type: vector(4) float
+morthr.c:9:9: note: not vectorized: not enough data-refs in basic block.
+morthr.c:9:9: note: not consecutive access _310 = *_309;
+
+morthr.c:9:9: note: not consecutive access _312 = *_311;
+
+morthr.c:9:9: note: not consecutive access _316 = *_315;
+
+morthr.c:9:9: note: not consecutive access _320 = *_319;
+
+morthr.c:9:9: note: not consecutive access _324 = *_323;
+
+morthr.c:9:9: note: Failed to SLP the basic block.
+morthr.c:9:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:9:9: note: not consecutive access _455 = *_454;
+
+morthr.c:9:9: note: not consecutive access _457 = *_456;
+
+morthr.c:9:9: note: not consecutive access _461 = *_460;
+
+morthr.c:9:9: note: not consecutive access _465 = *_464;
+
+morthr.c:9:9: note: not consecutive access _469 = *_468;
+
+morthr.c:9:9: note: Failed to SLP the basic block.
+morthr.c:9:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:9:9: note: not consecutive access _481 = *_480;
+
+morthr.c:9:9: note: not consecutive access _483 = *_482;
+
+morthr.c:9:9: note: not consecutive access _487 = *_486;
+
+morthr.c:9:9: note: not consecutive access _491 = *_490;
+
+morthr.c:9:9: note: not consecutive access _495 = *_494;
+
+morthr.c:9:9: note: Failed to SLP the basic block.
+morthr.c:9:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:15:10: note: SLP: step doesn't divide the vector-size.
+morthr.c:15:10: note: Unknown alignment for access: *w_11(D)
+morthr.c:15:10: note: SLP: step doesn't divide the vector-size.
+morthr.c:15:10: note: Unknown alignment for access: *v0_15(D)
+morthr.c:15:10: note: SLP: step doesn't divide the vector-size.
+morthr.c:15:10: note: Unknown alignment for access: *v1_20(D)
+morthr.c:15:10: note: SLP: step doesn't divide the vector-size.
+morthr.c:15:10: note: Unknown alignment for access: *v2_25(D)
+morthr.c:15:10: note: SLP: step doesn't divide the vector-size.
+morthr.c:15:10: note: Unknown alignment for access: *v3_30(D)
+morthr.c:15:10: note: SLP: step doesn't divide the vector-size.
+morthr.c:15:10: note: Unknown alignment for access: *w_11(D)
+morthr.c:15:10: note: Failed to SLP the basic block.
+morthr.c:15:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:15:10: note: not consecutive access _54 = *_53;
+
+morthr.c:15:10: note: not consecutive access *_53 = _417;
+
+morthr.c:15:10: note: not consecutive access _56 = *_55;
+
+morthr.c:15:10: note: not consecutive access _407 = *_406;
+
+morthr.c:15:10: note: not consecutive access _411 = *_410;
+
+morthr.c:15:10: note: not consecutive access _415 = *_414;
+
+morthr.c:15:10: note: Failed to SLP the basic block.
+morthr.c:15:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:15:10: note: not consecutive access _427 = *_426;
+
+morthr.c:15:10: note: not consecutive access *_426 = _443;
+
+morthr.c:15:10: note: not consecutive access _429 = *_428;
+
+morthr.c:15:10: note: not consecutive access _433 = *_432;
+
+morthr.c:15:10: note: not consecutive access _437 = *_436;
+
+morthr.c:15:10: note: not consecutive access _441 = *_440;
+
+morthr.c:15:10: note: Failed to SLP the basic block.
+morthr.c:15:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:15:10: note: not consecutive access _90 = *_91;
+
+morthr.c:15:10: note: not consecutive access *_91 = _65;
+
+morthr.c:15:10: note: not consecutive access _88 = *_89;
+
+morthr.c:15:10: note: not consecutive access _84 = *_85;
+
+morthr.c:15:10: note: not consecutive access _80 = *_81;
+
+morthr.c:15:10: note: not consecutive access _67 = *_77;
+
+morthr.c:15:10: note: Failed to SLP the basic block.
+morthr.c:15:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:15:10: note: not vectorized: no vectype for stmt: vect__39.14_201 = MEM[(float *)vectp_w.12_199];
+ scalar_type: vector(4) float
+morthr.c:15:10: note: not vectorized: not enough data-refs in basic block.
+morthr.c:15:10: note: not consecutive access _167 = *_166;
+
+morthr.c:15:10: note: not consecutive access *_166 = _183;
+
+morthr.c:15:10: note: not consecutive access _169 = *_168;
+
+morthr.c:15:10: note: not consecutive access _173 = *_172;
+
+morthr.c:15:10: note: not consecutive access _177 = *_176;
+
+morthr.c:15:10: note: not consecutive access _181 = *_180;
+
+morthr.c:15:10: note: Failed to SLP the basic block.
+morthr.c:15:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:15:10: note: not consecutive access _291 = *_6;
+
+morthr.c:15:10: note: not consecutive access *_6 = _17;
+
+morthr.c:15:10: note: not consecutive access _338 = *_340;
+
+morthr.c:15:10: note: not consecutive access _73 = *_332;
+
+morthr.c:15:10: note: not consecutive access _69 = *_70;
+
+morthr.c:15:10: note: not consecutive access _14 = *_12;
+
+morthr.c:15:10: note: Failed to SLP the basic block.
+morthr.c:15:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:15:10: note: not consecutive access _27 = *_26;
+
+morthr.c:15:10: note: not consecutive access *_26 = _45;
+
+morthr.c:15:10: note: not consecutive access _29 = *_28;
+
+morthr.c:15:10: note: not consecutive access _34 = *_33;
+
+morthr.c:15:10: note: not consecutive access _38 = *_37;
+
+morthr.c:15:10: note: not consecutive access _43 = *_42;
+
+morthr.c:15:10: note: Failed to SLP the basic block.
+morthr.c:15:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:3:6: note: not vectorized: not enough data-refs in basic block.
+
+morthr.c:33:5: note: Unknown misalignment, is_packed = 0
+morthr.c:33:5: note: Unknown misalignment, is_packed = 0
+morthr.c:33:5: note: Unknown misalignment, is_packed = 0
+morthr.c:33:5: note: Unknown misalignment, is_packed = 0
+morthr.c:33:5: note: Unknown misalignment, is_packed = 0
+morthr.c:33:5: note: Unknown misalignment, is_packed = 0
+morthr.c:33:5: note: virtual phi. skip.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: not ssa-name.
+morthr.c:33:5: note: use not simple.
+morthr.c:33:5: note: virtual phi. skip.
+morthr.c:33:5: note: virtual phi. skip.
+morthr.c:27:5: note: step unknown.
+morthr.c:27:5: note: step unknown.
+morthr.c:27:5: note: step unknown.
+morthr.c:27:5: note: step unknown.
+morthr.c:27:5: note: Unknown misalignment, is_packed = 0
+morthr.c:27:5: note: Unknown misalignment, is_packed = 0
+morthr.c:27:5: note: Unknown misalignment, is_packed = 0
+morthr.c:27:5: note: Unknown misalignment, is_packed = 0
+morthr.c:27:5: note: Unknown misalignment, is_packed = 0
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: Build SLP failed: not grouped load _32 = *_31;
+
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: not ssa-name.
+morthr.c:27:5: note: use not simple.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: reduc phi. skip.
+morthr.c:27:5: note: not vectorized: not enough data-refs in basic block.
+morthr.c:36:1: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:28:9: note: not consecutive access _484 = *_483;
+
+morthr.c:28:9: note: not consecutive access _486 = *_485;
+
+morthr.c:28:9: note: not consecutive access _490 = *_489;
+
+morthr.c:28:9: note: not consecutive access _494 = *_493;
+
+morthr.c:28:9: note: not consecutive access _498 = *_497;
+
+morthr.c:28:9: note: Failed to SLP the basic block.
+morthr.c:28:9: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:28:9: note: not consecutive access _512 = *_511;
+
+morthr.c:28:9: note: not consecutive access _514 = *_513;
+
+morthr.c:28:9: note: not consecutive access _518 = *_517;
+
+morthr.c:28:9: note: not consecutive access _522 = *_521;
+
+morthr.c:28:9: note: not consecutive access _526 = *_525;
+
+morthr.c:28:9: note: Failed to SLP the basic block.
+morthr.c:28:9: note: not vectorized: failed to find SLP opportblock.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:34:10: note: not consecutive access _54 = *_53;
+
+morthr.c:34:10: note: not consecutive access *_53 = _367;
+
+morthr.c:34:10: note: not consecutive access _56 = *_55;
+
+morthr.c:34:10: note: not consecutive access _357 = *_356;
+
+morthr.c:34:10: note: not consecutive access _361 = *_360;
+
+morthr.c:34:10: note: not consecutive access _365 = *_364;
+
+morthr.c:34:10: note: Failed to SLP the basic block.
+morthr.c:34:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:34:10: note: not consecutive access _377 = *_376;
+
+morthr.c:34:10: note: not consecutive access *_376 = _393;
+
+morthr.c:34:10: note: not consecutive access _379 = *_378;
+
+morthr.c:34:10: note: not consecutive access _383 = *_382;
+
+morthr.c:34:10: note: not consecutive access _387 = *_386;
+
+morthr.c:34:10: note: not consecutive access _391 = *_390;
+
+morthr.c:34:10: note: Failed to SLP the basic block.
+morthr.c:34:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:34:10: note: not consecutive access _403 = *_402;
+
+morthr.c:34:10: note: not consecutive access *_402 = _419;
+
+morthr.c:34:10: note: not consecutive access _405 = *_404;
+
+morthr.c:34:10: note: not consecutive access _409 = *_408;
+
+morthr.c:34:10: note: not consecutive access _413 = *_412;
+
+morthr.c:34:10: note: not consecutive access _417 = *_416;
+
+morthr.c:34:10: note: Failed to SLP the basic block.
+morthr.c:34:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:34:10: note: not consecutive access _144 = *_145;
+
+morthr.c:34:10: note: not consecutive access *_145 = _125;
+
+morthr.c:34:10: note: not consecutive access _139 = *_140;
+
+morthr.c:34:10: note: not consecutive access _135 = *_136;
+
+morthr.c:34:10: note: not consecutive access _131 = *_132;
+
+morthr.c:34:10: note: not consecutive access _127 = *_128;
+
+morthr.c:34:10: note: Failed to SLP the basic block.
+morthr.c:34:10: note: not vectorized: failed to find SLP opportunities in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+morthr.c:19:6: note: not vectorized: not enough data-refs in basic block.
+gcc morth1.o morthr.o -o morth1 -lm

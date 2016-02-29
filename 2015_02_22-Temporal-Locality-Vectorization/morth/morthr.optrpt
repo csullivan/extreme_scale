@@ -1,0 +1,71 @@
+
+Begin optimization report for: morthf(int, float *, float *, float *, float *, float *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at morthr.c(8,5)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at morthr.c(8,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morthr.c(8,5)
+   remark #25460: No loop optimizations reported
+LOOP END
+
+LOOP BEGIN at morthr.c(8,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at morthr.c(14,5)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed FLOW dependence between  line 15 and  line 15
+LOOP END
+===========================================================================
+
+Begin optimization report for: morthfr(int, float *__restrict__, const float *__restrict__, const float *__restrict__, const float *__restrict__, const float *__restrict__)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at morthr.c(27,5)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at morthr.c(27,5)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morthr.c(27,5)
+   remark #25460: No loop optimizations reported
+LOOP END
+
+LOOP BEGIN at morthr.c(27,5)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at morthr.c(33,5)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at morthr.c(33,5)
+   remark #15399: vectorization support: unroll factor set to 2
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morthr.c(33,5)
+   remark #25460: No loop optimizations reported
+LOOP END
+
+LOOP BEGIN at morthr.c(33,5)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morthr.c(33,5)
+<Remainder>
+LOOP END
+===========================================================================

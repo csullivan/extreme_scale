@@ -1,0 +1,216 @@
+
+Begin optimization report for: main(int, char **)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at morth1.c(41,3)
+   remark #15399: vectorization support: unroll factor set to 2
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(41,3)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at morth1.c(44,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at morth1.c(110,3) inlined into morth1.c(45,5)
+      remark #15399: vectorization support: unroll factor set to 2
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at morth1.c(49,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at morth1.c(138,3) inlined into morth1.c(50,7)
+         remark #15399: vectorization support: unroll factor set to 4
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(138,3) inlined into morth1.c(50,7)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(138,3) inlined into morth1.c(50,7)
+      <Remainder>
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(50,7)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15301: FUSED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(138,3) inlined into morth1.c(51,7)
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(50,7)
+      <Remainder>
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(51,7)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15301: FUSED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(138,3) inlined into morth1.c(52,7)
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(51,7)
+      <Remainder>
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(52,7)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15301: FUSED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(138,3) inlined into morth1.c(53,7)
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(52,7)
+      <Remainder>
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(53,7)
+         remark #15399: vectorization support: unroll factor set to 4
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(53,7)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(141,3) inlined into morth1.c(53,7)
+      <Remainder>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at morth1.c(60,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at morth1.c(123,3) inlined into morth1.c(61,7)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(123,3) inlined into morth1.c(61,7)
+      <Remainder>
+      LOOP END
+
+      LOOP BEGIN at morth1.c(129,3) inlined into morth1.c(61,7)
+         remark #15399: vectorization support: unroll factor set to 2
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(129,3) inlined into morth1.c(61,7)
+      <Remainder>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at morth1.c(129,3) inlined into morth1.c(61,7)
+      <Remainder>
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at morth1.c(68,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   LOOP END
+
+   LOOP BEGIN at morth1.c(76,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   LOOP END
+
+   LOOP BEGIN at morth1.c(84,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: morth1(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at morth1.c(123,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(123,3)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at morth1.c(129,3)
+   remark #15399: vectorization support: unroll factor set to 2
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(129,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(129,3)
+<Remainder>
+LOOP END
+===========================================================================
+
+Begin optimization report for: sorth1(int, float *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at morth1.c(138,3)
+   remark #15399: vectorization support: unroll factor set to 4
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(138,3)
+<Remainder>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(138,3)
+<Remainder>
+LOOP END
+
+LOOP BEGIN at morth1.c(141,3)
+<Multiversioned v1>
+   remark #15399: vectorization support: unroll factor set to 4
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(141,3)
+<Remainder, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(141,3)
+<Remainder, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at morth1.c(141,3)
+<Multiversioned v2>
+   remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+LOOP END
+
+LOOP BEGIN at morth1.c(141,3)
+<Remainder, Multiversioned v2>
+LOOP END
+===========================================================================
+
+Begin optimization report for: init(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at morth1.c(110,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at morth1.c(110,3)
+<Remainder>
+LOOP END
+===========================================================================
