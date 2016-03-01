@@ -11,7 +11,7 @@ AR       = ar
 RM       = rm -f
 
 # Flags to be passed to both C and C++ code
-CPPFLAGS = -Wall -Wextra -pedantic
+CPPFLAGS = -Wall -Wextra -pedantic -fopenmp
 
 # Flags to be passed to C code
 CFLAGS   = -O3
@@ -20,10 +20,10 @@ CFLAGS   = -O3
 CXXFLAGS = -O3
 
 # Flags to be passed to the linker, prior to listing of object files.
-LDFLAGS  =
+LDFLAGS  = -fopenmp
 
 # Flags to be passed to the linker, after the listing of object files.
-LDLIBS   =
+LDLIBS   = -fopenmp
 
 # A list of directories containing source files containing "int
 # main()".  Each file will be compiled into a separate executable.

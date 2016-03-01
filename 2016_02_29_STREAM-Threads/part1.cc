@@ -47,6 +47,7 @@ int main(int argc, char *argv[]) {
   auto fullstart = chrono::high_resolution_clock::now();
   for (int k=0; k<1; k++) {
     auto start = chrono::high_resolution_clock::now();
+    #pragma omp parallel for
     for (int i=0; i<n; i++) {
       c[i] = a[i];
     }
@@ -64,6 +65,7 @@ int main(int argc, char *argv[]) {
   fullstart = chrono::high_resolution_clock::now();
   for (int k=0; k<nk; k++) {
     auto start = chrono::high_resolution_clock::now();
+    #pragma omp parallel for
     for (int i=0; i<n; i++) {
       c[i] = a[i];
     }

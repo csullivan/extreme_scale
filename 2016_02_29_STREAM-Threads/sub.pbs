@@ -1,0 +1,35 @@
+#!/bin/sh
+### name of job
+#PBS -N omp_copy
+### email on _a_bort, _b_egin, _e_nd
+#PBS -m abe
+### combine stdout/stderr
+#PBS -j oe
+### resource requests (time in HH:MM:SS)
+#PBS -l walltime=00:12:00
+### dont retry
+#PBS -r n
+### Output file
+#PBS -o ./output.dat
+### number of CPUS
+#PBS -l nodes=1:ppn=16
+
+cd ${PBS_O_WORKDIR}
+export OMP_NUM_THREADS=1
+./bin/part1 1000000000 1
+export OMP_NUM_THREADS=2
+./bin/part1 1000000000 1
+export OMP_NUM_THREADS=4
+./bin/part1 1000000000 1
+export OMP_NUM_THREADS=6
+./bin/part1 1000000000 1
+export OMP_NUM_THREADS=8
+./bin/part1 1000000000 1
+export OMP_NUM_THREADS=10
+./bin/part1 1000000000 1
+export OMP_NUM_THREADS=12
+./bin/part1 1000000000 1
+export OMP_NUM_THREADS=14
+./bin/part1 1000000000 1
+export OMP_NUM_THREADS=16
+./bin/part1 1000000000 1
