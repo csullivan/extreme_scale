@@ -1,0 +1,18 @@
+1
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 1.362e+00 11.750 1.362
+2
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 9.274e-01 17.252 0.927
+4
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 6.300e-01 25.397 0.630
+6
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.571e-01 28.719 0.557
+8
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.487e-01 29.157 0.549
+10
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.875e-01 27.234 0.587
+12
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.655e-01 28.295 0.565
+14
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.494e-01 29.123 0.549
+16
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.411e-01 29.567 0.541
