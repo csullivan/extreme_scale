@@ -2,9 +2,16 @@ import pylab
 import numpy as np
 from setfont import *
 
+
+
 def plot_rate_threads(ax,data):
-    print data[:,0]
+    model = []
+    for nt in data[:,0]:
+        model.append(data[0,3]*nt)
     ax.plot(data[:,0],data[:,3])
+    ax.plot(data[:,0],model)
+    ax.plot(data[:,0],[30 for x in data[:,0]])
+
     #ax.set_yscale('log')
     setticks(ax,xmajor=2,xminor=1,ymajor=2,yminor=1)
     pylab.show()
@@ -36,5 +43,5 @@ if __name__ =="__main__":
         data.append(np.asarray(line))
     data = np.asarray(data)
 
-    #plot_rate_threads(ax,data)
-    plot_time_threads(ax,data)
+    plot_rate_threads(ax,data)
+    #plot_time_threads(ax,data)
