@@ -28,7 +28,8 @@ if __name__ =="__main__":
     ax = pylab.subplot(1,1,1)   
     #for line in open("./output.dat"):
     optclass = []
-    for i,line in enumerate(open("./plotdata_1e9.dat")):
+    #for i,line in enumerate(open("./plotdata_1e9.dat")):
+    for i,line in enumerate(open("./output_full.dat")):
         if '#' in line:
             continue
         if 'O' in line:
