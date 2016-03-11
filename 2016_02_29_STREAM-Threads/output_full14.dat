@@ -1,0 +1,51 @@
+1
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 1.321e+00 12.112 1.321
+2
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 7.956e-01 20.110 0.796
+4
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 6.080e-01 26.317 0.608
+6
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 4.067e-01 39.341 0.407
+8
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.575e-01 28.699 0.558
+10
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.635e-01 28.396 0.563
+12
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.675e-01 28.192 0.568
+14
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.494e-01 29.123 0.549
+16
+Array size (n), Time for loop (s), Rate (GB/s), Total time (s):   1000000000 5.255e-01 30.446 0.526
+-------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+-------------------------------------------------------------
+This system uses 8 bytes per array element.
+-------------------------------------------------------------
+Array size = 100000000 (elements), Offset = 0 (elements)
+Memory per array = 762.9 MiB (= 0.7 GiB).
+Total memory required = 2288.8 MiB (= 2.2 GiB).
+Each kernel will be executed 10 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+-------------------------------------------------------------
+Number of Threads requested = 16
+Number of Threads counted = 16
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 19314 microseconds.
+   (= 19314 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           58949.1     0.027411     0.027142     0.027557
+Scale:          62388.0     0.025736     0.025646     0.025797
+Add:            69640.0     0.034654     0.034463     0.034860
+Triad:          70266.2     0.034245     0.034156     0.034368
+-------------------------------------------------------------
+Solution Validates: avg error less than 1.000000e-13 on all three arrays
+-------------------------------------------------------------

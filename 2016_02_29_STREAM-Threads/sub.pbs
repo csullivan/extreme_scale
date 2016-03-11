@@ -6,39 +6,42 @@
 ### combine stdout/stderr
 #PBS -j oe
 ### resource requests (time in HH:MM:SS)
-#PBS -l walltime=00:12:00
+#PBS -l walltime=00:45:00
 ### dont retry
 #PBS -r n
 ### Output file
-#PBS -o ./output.dat
+#PBS -o ./output_full14.dat
 ### number of CPUS
-#PBS -l nodes=1:ppn=16
+#PBS -l nodes=1:ppn=20
 
 cd ${PBS_O_WORKDIR}
 export OMP_NUM_THREADS=1
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
 export OMP_NUM_THREADS=2
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
 export OMP_NUM_THREADS=4
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
 export OMP_NUM_THREADS=6
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
 export OMP_NUM_THREADS=8
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
 export OMP_NUM_THREADS=10
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
 export OMP_NUM_THREADS=12
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
 export OMP_NUM_THREADS=14
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
 export OMP_NUM_THREADS=16
 echo $OMP_NUM_THREADS 
-./bin/part1 10000000000 1
+./bin/part1 1000000000 1
+./STREAM/stream_c.exe
+echo " "
+lscpu
