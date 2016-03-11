@@ -1,0 +1,35 @@
+Compiled without OMP
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 7.000e-06 1.400e-05 2.160e-05
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 8.490e-04 1.630e-03 2.620e-03
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 7.251e+00 1.603e+00 2.602e+00
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 3.795e+01 7.869e+00 1.278e+01 
+OMP_NUM_THREADS=1
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 8.000e-06 1.400e-05 2.160e-05
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 8.530e-04 1.630e-03 2.620e-03
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 7.286e+00 1.603e+00 2.602e+00
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 3.820e+01 7.869e+00 1.278e+01
+OMP_NUM_THREADS=2
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 9.000e-06 1.400e-05 2.160e-05
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 4.430e-04 1.630e-03 2.620e-03
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 3.751e+00 1.603e+00 2.602e+00
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 1.966e+01 7.869e+00 1.278e+01
+OMP_NUM_THREADS=4
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 1.000e-05 1.400e-05 2.160e-05
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 2.570e-04 1.630e-03 2.620e-03
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 1.887e+00 1.603e+00 2.602e+00
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 1.003e+01 7.869e+00 1.278e+01
+OMP_NUM_THREADS=8
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 1.200e-05 1.400e-05 2.160e-05
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 1.330e-04 1.630e-03 2.620e-03
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 1.006e+00 1.603e+00 2.602e+00
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 5.300e+00 7.869e+00 1.278e+01
+OMP_NUM_THREADS=16
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 1.400e-05 1.400e-05 2.160e-05
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 1.110e-04 1.630e-03 2.620e-03
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 7.948e-01 1.603e+00 2.602e+00
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 3.992e+00 7.869e+00 1.278e+01
+OMP_NUM_THREADS=32
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):        20 4.556e-03 1.400e-05 2.160e-05
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):       100 4.712e-03 1.630e-03 2.620e-03
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1000 5.689e-01 1.603e+00 2.602e+00
+Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):      1700 3.112e+00 7.869e+00 1.278e+01

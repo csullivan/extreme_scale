@@ -11,7 +11,7 @@ AR       = ar
 RM       = rm -f
 
 # Flags to be passed to both C and C++ code
-CPPFLAGS = -Wall -Wextra -pedantic -fopenmp -O3
+CPPFLAGS = -Wall -Wextra -pedantic -O3
 
 # Flags to be passed to C code
 CFLAGS   = 
@@ -20,7 +20,7 @@ CFLAGS   =
 CXXFLAGS = 
 
 # Flags to be passed to the linker, prior to listing of object files.
-LDFLAGS  =
+LDFLAGS  = 
 
 # Flags to be passed to the linker, after the listing of object files.
 LDLIBS   =

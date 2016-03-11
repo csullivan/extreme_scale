@@ -25,7 +25,7 @@ inline double* basic_matrix_multiply(const double* matrixA, double *matrixB, con
     // warm-up
   auto start = chrono::high_resolution_clock::now();  
 
-  //  #pragma omp parallel for
+  #pragma omp parallel for
   for(int i=0;i<matrix_dimension;i++){
     for(int j=0;j<matrix_dimension;j++){
       double sum = 0.;
@@ -47,7 +47,7 @@ inline double* basic_matrix_multiply(const double* matrixA, double *matrixB, con
 
     start = chrono::high_resolution_clock::now();  
 
-    //    #pragma omp parallel for
+    #pragma omp parallel for
     for(int i=0;i<matrix_dimension;i++){
       for(int j=0;j<matrix_dimension;j++){
 	double sum = 0.;
@@ -97,21 +97,22 @@ inline double* blocked_matrix_multiply(const int& blocksize,
   for(int jblock=0;jblock<matrix_dimension;jblock+= blocksize){
     for(int kblock=0;kblock<matrix_dimension;kblock+= blocksize){
 
+      #pragma omp parallel for
       for(int i=0;i<matrix_dimension;i++){
-	for(int j = jblock; j<((jblock+blocksize)>matrix_dimension?matrix_dimension:(jblock+blocksize)); j++){
+        for(int j = jblock; j<((jblock+blocksize)>matrix_dimension?matrix_dimension:(jblock+blocksize)); j++){
 
-	  sum = 0;
-	  for(int k = kblock; k<((kblock+blocksize)>matrix_dimension?matrix_dimension:(kblock+blocksize)); k++){
-	    sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
-	  }
+          sum = 0;
+          for(int k = kblock; k<((kblock+blocksize)>matrix_dimension?matrix_dimension:(kblock+blocksize)); k++){
+            sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
+          }
 
-	  matrixC[idx(i,j)] = sum;
-	}
+          matrixC[idx(i,j)] = sum+9;
+        }
       }
-      
+
     }
-  } 
-  
+  }
+
   auto stop = chrono::high_resolution_clock::now();
   double tperformance =
     chrono::duration_cast<chrono::microseconds>(stop - start).count();    
@@ -121,27 +122,27 @@ inline double* blocked_matrix_multiply(const int& blocksize,
 
   tperformance = 0.0;
   for (int n=0;n<trials;n++) {
-    start = chrono::high_resolution_clock::now();  
+    start = chrono::high_resolution_clock::now();
 
     for(int jblock=0;jblock<matrix_dimension;jblock+= blocksize){
       for(int kblock=0;kblock<matrix_dimension;kblock+= blocksize){
-      
-	for(int i=0;i<matrix_dimension;i++){
-	  for(int j = jblock; j<((jblock+blocksize)>matrix_dimension?matrix_dimension:(jblock+blocksize)); j++){
-	  
-	    sum = 0;
-	    for(int k = kblock; k<((kblock+blocksize)>matrix_dimension?matrix_dimension:(kblock+blocksize)); k++){
-	      sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
-	    }
 
-	    matrixC[idx(i,j)] = sum;
-	  }
-	}
-      
+        #pragma omp parallel for
+        for(int i=0;i<matrix_dimension;i++){
+          for(int j = jblock; j<((jblock+blocksize)>matrix_dimension?matrix_dimension:(jblock+blocksize)); j++){
+
+            sum = 0;
+            for(int k = kblock; k<((kblock+blocksize)>matrix_dimension?matrix_dimension:(kblock+blocksize)); k++){
+              sum += matrixA[idx(i,k)]*matrixB[idx(k,j)];
+            }
+
+            matrixC[idx(i,j)] = sum;
+          }
+        }
+
       }
-    } 
+    }
 
-  
     stop = chrono::high_resolution_clock::now();
     tperformance +=
       chrono::duration_cast<chrono::microseconds>(stop - start).count();
