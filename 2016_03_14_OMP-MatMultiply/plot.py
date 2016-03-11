@@ -30,10 +30,25 @@ def plot_block_v_unblocked(ax,data):
 def plot_time_v_thread(ax,nthreads,data):
     #data[ompthreadsnum,row,col]
     #for i,numth in enumerate(nthreads):
-    ax.plot(nthreads,data[:,0,1]) # 20
-    ax.plot(nthreads,data[:,1,1]) # 100
+    #ax.plot(nthreads,data[:,0,1]) # 20
+    #ax.plot(nthreads,data[:,1,1]) # 100
     ax.plot(nthreads,data[:,2,1]) # 1000
     ax.plot(nthreads,data[:,3,1]) # 1700
+
+    ax.set_yscale('log')
+    ax.set_xlim(0,32)
+    #ax.set_xscale('log')
+    setticks(ax,xlog=True,ylog=True)
+    pylab.show()
+def plot_rate_v_thread(ax,nthreads,data):
+    #data[ompthreadsnum,row,col]
+    #for i,numth in enumerate(nthreads):
+    #ax.plot(nthreads,data[:,0,1]) # 20
+    #ax.plot(nthreads,data[:,1,1]) # 100
+    rate = [2*1000*1000*1.0e-6/x for x in data[:,2,1]]
+    ax.plot(nthreads,rate) # 1000
+    rate = [2*1700*1700*1.0e-6/x for x in data[:,3,1]]
+    ax.plot(nthreads,rate) # 1700
 
     ax.set_yscale('log')
     ax.set_xlim(0,32)
@@ -69,4 +84,5 @@ if __name__ =="__main__":
 
     print data
     print len(data)
-    plot_time_v_thread(ax,nthreads,data)
+    #plot_time_v_thread(ax,nthreads,data)
+    plot_rate_v_thread(ax,nthreads,data)

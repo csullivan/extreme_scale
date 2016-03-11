@@ -66,15 +66,17 @@ inline double* basic_matrix_multiply(const double* matrixA, double *matrixB, con
   // ----------------------------------------------------------------------
   
   tperformance = tperformance*1e-6/trials;
-  cout << "Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2):   ";
+  //cout << "Matrix dim (n), Basic M. M. (s), Prediction (Assumption 1), Prediction (Assumption 2), Rate (GB/s):   ";
+  cout << "Matrix dim (n), Basic M. M. (s), Rate (MB/s):   ";
   cout << setw(7) << matrix_dimension <<" "<< scientific << setprecision(3);
-  cout  << tperformance << " ";  
+  cout  << tperformance << " ";
   double rw = 1e-9; // sec / double precision word
   double c = 0.2e-9; // sec / floating pt operation
   double n = matrix_dimension;
   double t_model1 = 8*c*n*n*n + (2*rw+rw)*n*n;
   double t_model2 = (8*c+rw)*n*n*n + (rw+rw)*n*n;
-  cout << t_model1 << " " << t_model2 << " ";
+  //cout << t_model1 << " " << t_model2 << " ";
+  cout << 2*n*n*sizeof(double)/tperformance * 1.0e-6 << " ";
   cout << endl;
 
   return matrixC;
