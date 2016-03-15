@@ -47,8 +47,16 @@ def plot_rate_v_thread(ax,nthreads,data):
     #ax.plot(nthreads,data[:,1,1]) # 100
     rate = [2*1000*1000*1.0e-6/x for x in data[:,2,1]]
     ax.plot(nthreads,rate) # 1000
+    slope=8.0/(1.0+8.0)
+    intercept=1.0/(1.0+8.0)
+    ax.plot(nthreads,[min(rate[0]*x,slope*rate[0]*x+4*intercept) for x in nthreads],'--')
+
     rate = [2*1700*1700*1.0e-6/x for x in data[:,3,1]]
     ax.plot(nthreads,rate) # 1700
+    slope=8.0/(1.0+8.0)
+    intercept=1.0/(1.0+8.0)
+    ax.plot(nthreads,[min(rate[0]*x,slope*rate[0]*x+4*intercept) for x in nthreads],'--')
+
 
     ax.set_yscale('log')
     ax.set_xlim(0,32)
