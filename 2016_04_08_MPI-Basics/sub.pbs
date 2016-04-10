@@ -1,0 +1,18 @@
+#!/bin/sh
+### name of job
+#PBS -N extremescale
+### email on _a_bort, _b_egin, _e_nd
+#PBS -m abe
+### combine stdout/stderr
+#PBS -j oe
+### resource requests (time in HH:MM:SS)
+#PBS -l walltime=99:00:00
+### dont retry
+#PBS -r n
+### Output file
+#PBS -o /user/sullivan/output_mpi.dat
+### number of CPUS
+#PBS -l nodes=2
+
+cd ${PBS_O_WORKDIR}
+time mpiexec ./make_table_weakrates
