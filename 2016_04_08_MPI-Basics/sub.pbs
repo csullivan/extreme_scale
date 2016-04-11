@@ -12,7 +12,8 @@
 ### Output file
 #PBS -o ./output.dat
 ### number of CPUS
-#PBS -l nodes=2:ppn=1
+#PBS -l nodes=24
 
 cd ${PBS_O_WORKDIR}
-bash job.sh
+#bash job.sh
+mpiexec ./bin/mpinetwork_bench

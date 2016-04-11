@@ -15,7 +15,6 @@ void blocking_comm(const int32_t& rank, const int32_t& rank_i, const int32_t& ra
     MPI_Send(sendbuffer, mcount, MPI_FLOAT, rank_i, 0, MPI_COMM_WORLD);
   }
 }
-
 void nonblocking_comm(const int32_t& rank, const int32_t& rank_i, const int32_t& rank_j, const uint32_t& mcount, float* sendbuffer, float* recbuffer) {
   MPI_Status stat[4];
   MPI_Request req[4];
@@ -32,15 +31,15 @@ void nonblocking_comm(const int32_t& rank, const int32_t& rank_i, const int32_t&
     MPI_Wait(&req[3],&stat[3]);
   }
 }
-
 void headtohead_comm(const int32_t& rank, const int32_t& rank_i, const int32_t& rank_j, const uint32_t& mcount, float* sendbuffer, float* recbuffer) {
-  MPI_Status stat[4];
-  MPI_Request req[4];
-  MPI_Irecv(recbuffer, mcount, MPI_FLOAT, rank_j, 0, MPI_COMM_WORLD, &req[0]);
-  MPI_Isend(sendbuffer, mcount, MPI_FLOAT, rank_j, 0, MPI_COMM_WORLD, &req[1]);
-  MPI_Irecv(recbuffer, mcount, MPI_FLOAT, rank_i, 0, MPI_COMM_WORLD, &req[2]);
-  MPI_Isend(sendbuffer, mcount, MPI_FLOAT, rank_i, 0, MPI_COMM_WORLD, &req[3]);
-  MPI_Waitall(4,req,stat);
+
+  if (rank == rank_i || rank == rank_j) {
+    MPI_Request req[2];
+    const int32_t partner_rank = (rank == rank_i) ? rank_j : rank_i;
+    MPI_Irecv(recbuffer, mcount, MPI_FLOAT, partner_rank, 0, MPI_COMM_WORLD, &req[0]);
+    MPI_Isend(sendbuffer, mcount, MPI_FLOAT, partner_rank, 0, MPI_COMM_WORLD, &req[1]);
+    MPI_Waitall(2,req,MPI_STATUS_IGNORE);
+  }
 }
 void mpi_network_bench(int32_t rank_i, int32_t rank_j, uint32_t mcount, uint32_t ntrials=5) {
 
