@@ -10,9 +10,9 @@
 ### dont retry
 #PBS -r n
 ### Output file
-#PBS -o /user/sullivan/output_mpi.dat
+#PBS -o ./output.dat
 ### number of CPUS
-#PBS -l nodes=2
+#PBS -l nodes=2:ppn=1
 
 cd ${PBS_O_WORKDIR}
-time mpiexec ./make_table_weakrates
+bash job.sh
