@@ -12,7 +12,7 @@
 ### Output file
 #PBS -o ./output.dat
 ### number of CPUS
-#PBS -l nodes=24
+#PBS -l nodes=1:ppn=24
 
 cd ${PBS_O_WORKDIR}
 #bash job.sh

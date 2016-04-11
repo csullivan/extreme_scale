@@ -42,28 +42,32 @@ int main(int argc, char** argv) {
   } else {
 
     if (rank==0) cout << "\n###################### rank_i = 0  -  rank_j = 1 ######################" << endl;
-    for (int32_t i=2; i<18; i++) {
-      if (rank==0) cout << "### Message size (bytes): " << mcount*4 << " ###\n";
+    for (int32_t i=2; i<=18; i++) {
       mcount = (pow(2,i)/4);
+      if (rank==0) cout << "### Message size (bytes): " << mcount*4 << " ###\n";
       mpi_network_bench(0,1,mcount,10);
     }
 
-    // if (rank==0) cout << "\n###################### rank_i = 0  -  rank_j = wsize-1 ######################" << endl;
-    // for (int32_t i=2; i<18; i++) {
-    //   if (rank==0) cout << "### Message size (bytes): " << mcount*4 << " ###\n";
-    //   mcount = (pow(2,i)/4);
-    //   mpi_network_bench(0,wsize-1,mcount,10);
-    // }
+    MPI_Barrier(MPI_COMM_WORLD);
 
-    // if (wsize>=16+1) {
-    //   if (rank==0) cout << "\n###################### rank_i = 16  -  rank_j = 17 ######################" << endl;
-    //   for (int32_t i=2; i<18; i++) {
-    //     if (rank==0) cout << "### Message size (bytes): " << mcount*4 << " ###\n";
-    //     mcount = (pow(2,i)/4);
-    //     mpi_network_bench(16,16+1,mcount,10);
-    //   }
-    // }
+    if (rank==0) cout << "\n###################### rank_i = 0  -  rank_j = wsize-1 ######################" << endl;
+    for (int32_t i=2; i<=18; i++) {
+      mcount = (pow(2,i)/4);
+      if (rank==0) cout << "### Message size (bytes): " << mcount*4 << " ###\n";
+      mpi_network_bench(0,wsize-1,mcount,10);
+    }
 
+    MPI_Barrier(MPI_COMM_WORLD);
+
+    int even = 16;
+    if (wsize>=even+1) {
+      if (rank==even) cout << "\n###################### rank_i = 16  -  rank_j = 17 ######################" << endl;
+      for (int32_t i=2; i<=18; i++) {
+        mcount = (pow(2,i)/4);
+        if (rank==even) cout << "### Message size (bytes): " << mcount*4 << " ###\n";
+        mpi_network_bench(even,even+1,mcount,10);
+      }
+    }
 
   }
 
