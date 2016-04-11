@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N mpinetwork_bench
+#PBS -q normal
+#PBS -A babq
+#PBS -j oe
+#PBS -l walltime=00:09:59
+#PBS -m abe
+#PBS -M sullivan@nscl.msu.edu
+### Output file
+#PBS -o ./output.dat
+#PBS -l nodes=32:ppn=32:xe
+
+cd ${PBS_O_WORKDIR}
+
+aprun -n 32 -N 1 ./bin/mpinetwork_bench > output.out
