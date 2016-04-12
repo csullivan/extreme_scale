@@ -1,0 +1,210 @@
+
+###################### rank_i = 0  -  rank_j = 1 ######################
+### Message size (bytes): 4 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 8 ###
+    Blocking Rank 0 - Minimum time: 0 ms
+Non-blocking Rank 0 - Minimum time: 0 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 16 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 32 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 64 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 128 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 256 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 512 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 1024 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.00190735 ms
+Head-to-head Rank 0 - Minimum time: 0.000953674 ms
+### Message size (bytes): 2048 ###
+    Blocking Rank 0 - Minimum time: 0.00190735 ms
+Non-blocking Rank 0 - Minimum time: 0.00190735 ms
+Head-to-head Rank 0 - Minimum time: 0.00190735 ms
+### Message size (bytes): 4096 ###
+    Blocking Rank 0 - Minimum time: 0.0038147 ms
+Non-blocking Rank 0 - Minimum time: 0.00500679 ms
+Head-to-head Rank 0 - Minimum time: 0.00286102 ms
+### Message size (bytes): 8192 ###
+    Blocking Rank 0 - Minimum time: 0.00786781 ms
+Non-blocking Rank 0 - Minimum time: 0.00786781 ms
+Head-to-head Rank 0 - Minimum time: 0.00500679 ms
+### Message size (bytes): 16384 ###
+    Blocking Rank 0 - Minimum time: 0.0128746 ms
+Non-blocking Rank 0 - Minimum time: 0.013113 ms
+Head-to-head Rank 0 - Minimum time: 0.00691414 ms
+### Message size (bytes): 32768 ###
+    Blocking Rank 0 - Minimum time: 0.0219345 ms
+Non-blocking Rank 0 - Minimum time: 0.0219345 ms
+Head-to-head Rank 0 - Minimum time: 0.0119209 ms
+### Message size (bytes): 65536 ###
+    Blocking Rank 0 - Minimum time: 0.0350475 ms
+Non-blocking Rank 0 - Minimum time: 0.0348091 ms
+Head-to-head Rank 0 - Minimum time: 0.0228882 ms
+### Message size (bytes): 131072 ###
+    Blocking Rank 0 - Minimum time: 0.0638962 ms
+Non-blocking Rank 0 - Minimum time: 0.0629425 ms
+Head-to-head Rank 0 - Minimum time: 0.0472069 ms
+### Message size (bytes): 262144 ###
+    Blocking Rank 0 - Minimum time: 0.117064 ms
+Non-blocking Rank 0 - Minimum time: 0.118017 ms
+Head-to-head Rank 0 - Minimum time: 0.0948906 ms
+
+###################### rank_i = 0  -  rank_j = wsize-1 ######################
+### Message size (bytes): 4 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 8 ###
+    Blocking Rank 0 - Minimum time: 0 ms
+Non-blocking Rank 0 - Minimum time: 0 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 16 ###
+    Blocking Rank 0 - Minimum time: 0 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 32 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 64 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 128 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 256 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0 ms
+### Message size (bytes): 512 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.000953674 ms
+Head-to-head Rank 0 - Minimum time: 0.000953674 ms
+### Message size (bytes): 1024 ###
+    Blocking Rank 0 - Minimum time: 0.000953674 ms
+Non-blocking Rank 0 - Minimum time: 0.00190735 ms
+Head-to-head Rank 0 - Minimum time: 0.000953674 ms
+### Message size (bytes): 2048 ###
+    Blocking Rank 0 - Minimum time: 0.00286102 ms
+Non-blocking Rank 0 - Minimum time: 0.00286102 ms
+Head-to-head Rank 0 - Minimum time: 0.00190735 ms
+### Message size (bytes): 4096 ###
+    Blocking Rank 0 - Minimum time: 0.00500679 ms
+Non-blocking Rank 0 - Minimum time: 0.00500679 ms
+Head-to-head Rank 0 - Minimum time: 0.00286102 ms
+### Message size (bytes): 8192 ###
+    Blocking Rank 0 - Minimum time: 0.00786781 ms
+Non-blocking Rank 0 - Minimum time: 0.00786781 ms
+Head-to-head Rank 0 - Minimum time: 0.00500679 ms
+### Message size (bytes): 16384 ###
+    Blocking Rank 0 - Minimum time: 0.0128746 ms
+Non-blocking Rank 0 - Minimum time: 0.0128746 ms
+Head-to-head Rank 0 - Minimum time: 0.00691414 ms
+### Message size (bytes): 32768 ###
+    Blocking Rank 0 - Minimum time: 0.0219345 ms
+Non-blocking Rank 0 - Minimum time: 0.0219345 ms
+Head-to-head Rank 0 - Minimum time: 0.0119209 ms
+### Message size (bytes): 65536 ###
+    Blocking Rank 0 - Minimum time: 0.0350475 ms
+Non-blocking Rank 0 - Minimum time: 0.0348091 ms
+Head-to-head Rank 0 - Minimum time: 0.0231266 ms
+### Message size (bytes): 131072 ###
+    Blocking Rank 0 - Minimum time: 0.0638962 ms
+Non-blocking Rank 0 - Minimum time: 0.0629425 ms
+Head-to-head Rank 0 - Minimum time: 0.0469685 ms
+### Message size (bytes): 262144 ###
+    Blocking Rank 0 - Minimum time: 0.117064 ms
+Non-blocking Rank 0 - Minimum time: 0.118017 ms
+
+###################### rank_i = 16  -  rank_j = 17 ######################
+### Message size (bytes): 4 ###
+    Blocking Rank 16 - Minimum time: 0.000953674 ms
+Non-blocking Rank 16 - Minimum time: 0.000953674 ms
+Head-to-head Rank 16 - Minimum time: 0 ms
+### Message size (bytes): 8 ###
+    Blocking Rank 16 - Minimum time: 0 ms
+Non-blocking Rank 16 - Minimum time: 0 ms
+Head-to-head Rank 16 - Minimum time: 0 ms
+### Message size (bytes): 16 ###
+    Blocking Rank 16 - Minimum time: 0 ms
+Non-blocking Rank 16 - Minimum time: 0 ms
+Head-to-head Rank 16 - Minimum time: 0 ms
+### Message size (bytes): 32 ###
+    Blocking Rank 16 - Minimum time: 0 ms
+Non-blocking Rank 16 - Minimum time: 0.000953674 ms
+Head-to-head Rank 16 - Minimum time: 0 ms
+### Message size (bytes): 64 ###
+    Blocking Rank 16 - Minimum time: 0.000953674 ms
+Non-blocking Rank 16 - Minimum time: 0.000953674 ms
+Head-to-head Rank 16 - Minimum time: 0 ms
+### Message size (bytes): 128 ###
+    Blocking Rank 16 - Minimum time: 0.000953674 ms
+Non-blocking Rank 16 - Minimum time: 0.000953674 ms
+Head-to-head Rank 16 - Minimum time: 0 ms
+### Message size (bytes): 256 ###
+    Blocking Rank 16 - Minimum time: 0.000953674 ms
+Non-blocking Rank 16 - Minimum time: 0.000953674 ms
+Head-to-head Rank 16 - Minimum time: 0 ms
+### Message size (bytes): 512 ###
+    Blocking Rank 16 - Minimum time: 0.000953674 ms
+Non-blocking Rank 16 - Minimum time: 0.00190735 ms
+Head-to-head Rank 16 - Minimum time: 0.000953674 ms
+### Message size (bytes): 1024 ###
+Head-to-head Rank 0 - Minimum time: 0.0948906 ms
+    Blocking Rank 16 - Minimum time: 0.00190735 ms
+Non-blocking Rank 16 - Minimum time: 0.00190735 ms
+Head-to-head Rank 16 - Minimum time: 0.000953674 ms
+### Message size (bytes): 2048 ###
+    Blocking Rank 16 - Minimum time: 0.00190735 ms
+Non-blocking Rank 16 - Minimum time: 0.00286102 ms
+Head-to-head Rank 16 - Minimum time: 0.00190735 ms
+### Message size (bytes): 4096 ###
+    Blocking Rank 16 - Minimum time: 0.00500679 ms
+Non-blocking Rank 16 - Minimum time: 0.00500679 ms
+Head-to-head Rank 16 - Minimum time: 0.00286102 ms
+### Message size (bytes): 8192 ###
+    Blocking Rank 16 - Minimum time: 0.00786781 ms
+Non-blocking Rank 16 - Minimum time: 0.00786781 ms
+Head-to-head Rank 16 - Minimum time: 0.00500679 ms
+### Message size (bytes): 16384 ###
+    Blocking Rank 16 - Minimum time: 0.0128746 ms
+Non-blocking Rank 16 - Minimum time: 0.0128746 ms
+Head-to-head Rank 16 - Minimum time: 0.00786781 ms
+### Message size (bytes): 32768 ###
+    Blocking Rank 16 - Minimum time: 0.0219345 ms
+Non-blocking Rank 16 - Minimum time: 0.0219345 ms
+Head-to-head Rank 16 - Minimum time: 0.0119209 ms
+### Message size (bytes): 65536 ###
+    Blocking Rank 16 - Minimum time: 0.0360012 ms
+Non-blocking Rank 16 - Minimum time: 0.0360012 ms
+Head-to-head Rank 16 - Minimum time: 0.0228882 ms
+### Message size (bytes): 131072 ###
+    Blocking Rank 16 - Minimum time: 0.0638962 ms
+Non-blocking Rank 16 - Minimum time: 0.0641346 ms
+Head-to-head Rank 16 - Minimum time: 0.0469685 ms
+### Message size (bytes): 262144 ###
+    Blocking Rank 16 - Minimum time: 0.119925 ms
+Non-blocking Rank 16 - Minimum time: 0.118971 ms
+Head-to-head Rank 16 - Minimum time: 0.0948906 ms
