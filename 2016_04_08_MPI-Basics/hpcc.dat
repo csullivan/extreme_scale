@@ -137,6 +137,7 @@ Head-to-head Rank 0 - Minimum time: 0.0469685 ms
 ### Message size (bytes): 262144 ###
     Blocking Rank 0 - Minimum time: 0.117064 ms
 Non-blocking Rank 0 - Minimum time: 0.118017 ms
+Head-to-head Rank 0 - Minimum time: 0.0948906 ms
 
 ###################### rank_i = 16  -  rank_j = 17 ######################
 ### Message size (bytes): 4 ###
@@ -172,7 +173,6 @@ Head-to-head Rank 16 - Minimum time: 0 ms
 Non-blocking Rank 16 - Minimum time: 0.00190735 ms
 Head-to-head Rank 16 - Minimum time: 0.000953674 ms
 ### Message size (bytes): 1024 ###
-Head-to-head Rank 0 - Minimum time: 0.0948906 ms
     Blocking Rank 16 - Minimum time: 0.00190735 ms
 Non-blocking Rank 16 - Minimum time: 0.00190735 ms
 Head-to-head Rank 16 - Minimum time: 0.000953674 ms
