@@ -1,8 +1,8 @@
 # The C compiler to be used
-CC       = mpicc
+CC       = cc
 
 # The C++ compiler to be used
-CXX      = mpic++
+CXX      = CC
 
 # The archiver to be used
 AR       = ar
