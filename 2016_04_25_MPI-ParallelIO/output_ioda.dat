@@ -1,0 +1,31 @@
+----------------------------------------
+Begin Torque Prologue on nid25330
+at Sun Apr 24 19:44:06 CDT 2016
+Job Id:			4533701.bw
+Username:		tra836
+Group:			TRAIN_babq
+Job name:		ioda
+Requested resources:	neednodes=64:ppn=32:xe,nodes=64:ppn=32:xe,walltime=00:20:00
+Queue:			normal
+Account:		babq
+End Torque Prologue:  0.046 elapsed
+----------------------------------------
+
+
+
+
+Matrix is [16384,16384]; file dir = /scratch/training/tra836/
+nstripes = 32, stripeUnit = -1, header size = 0
+1024	[16384,16384]	32	2.38e-02	4.17e-01	4.19e-01	5.14e+09
+1024	[16384,16384]	32	7.14e-02	1.65e+02	1.65e+02	1.30e+07
+Application 37735509 resources: utime ~48109s, stime ~721s, Rss ~25740, inblocks ~777198, outblocks ~9546818
+Matrix is [16384,16384]; file dir = /scratch/training/tra836/
+nstripes = 16, stripeUnit = -1, header size = 0
+1024	[16384,16384]	16	2.74e-02	5.19e-01	5.20e-01	4.13e+09
+1024	[16384,16384]	16	9.80e-02	2.63e+02	2.63e+02	8.15e+06
+Application 37735513 resources: utime ~60052s, stime ~712s, Rss ~26196, inblocks ~771650, outblocks ~9546514
+Matrix is [16384,16384]; file dir = /scratch/training/tra836/
+nstripes = 0, stripeUnit = -1, header size = 0
+1024	[16384,16384]	0	8.10e-02	6.24e+00	6.24e+00	3.44e+08
+1024	[16384,16384]	0	8.51e-02	7.31e+02	7.31e+02	2.94e+06
+Application 37735519 resources: utime ~292941s, stime ~796s, Rss ~37448, inblocks ~758416, outblocks ~9546566
