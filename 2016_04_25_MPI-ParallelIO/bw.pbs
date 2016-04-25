@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -N ioda
+#PBS -q normal
+#PBS -A babq
+#PBS -j oe
+#PBS -l walltime=00:20:00
+#PBS -m abe
+#PBS -M sullivan@nscl.msu.edu
+### Output file
+#PBS -o ./output_ioda.dat
+#PBS -l nodes=64:ppn=32:xe
+
+cd ${PBS_O_WORKDIR}
+
+aprun -n 1024 -N 16 ./ioda 16384 16384 32
+rm -f /scratch/training/tra836/*
+
+aprun -n 1024 -N 16 ./ioda 16384 16384 16
+rm -f /scratch/training/tra836/*
+
+aprun -n 1024 -N 16 ./ioda 16384 16384 0
+rm -f /scratch/training/tra836/*
