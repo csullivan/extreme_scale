@@ -1,3 +1,4 @@
+
 import pylab
 import numpy as np
 from setfont import *
@@ -29,96 +30,62 @@ def plot_size_v_time(ax,data):
     setticks(ax,xlog=True,ylog=True)
     ax.legend(loc='upper left', prop={'size':9})
 
-def plot_size_v_time_fit(ax,data):
-
-
-
-    postal_time = lambda n,s,r: s+r*n
-    # popt,pcov = curve_fit(postal_time,data[0][0],data[0][1])
-    # fit = lambda n: postal_time(n,popt[0],popt[1])
-    # ax.plot(data[0][0],[fit(x) for x in data[0][0]],label='s+rn')
-    x = []
-    y = []
-    for i,n in enumerate(data[0][0]):
-        if n < 8193 and n > 4:
-            x.append(n)
-            y.append(data[0][1][i])
-    x = np.asarray(x)
-    y = np.asarray(y)
-
-    ax.plot(x,y,label='blocking',color='black')
-    popt,pcov = curve_fit(postal_time,x,y)
-    fit = lambda n: postal_time(n,popt[0],popt[1])
-    print popt
-    ax.plot(x,[fit(xi) for xi in x],label='s1+r1*n',color='red')
-
-    x = []
-    y = []
-    for i,n in enumerate(data[0][0]):
-        if n > 8000:
-            x.append(n)
-            y.append(data[0][1][i])
-    x = np.asarray(x)
-    y = np.asarray(y)
-
-    ax.plot(x,y,label='blocking',color='black')
-    popt,pcov = curve_fit(postal_time,x,y)
-    fit = lambda n: postal_time(n,popt[0],popt[1])
-    print popt
-    ax.plot(x,[fit(xi) for xi in x],label='s2+r2*n',color='blue')
-
-
-    ax.set_ylim(1e-4,1e0)
+def plot_time_matrix_size(ax,data,ndatum,xlabel='NxN Matrix Size [dword]',ylabel='Time [s]',labeltoken=""):
+    for nproc in set(data[:,1]):
+        pylab.plot([np.sqrt(x) for i,x in enumerate(data[:,0]) if data[i,1]==nproc],[x for i,x in enumerate(data[:,ndatum]) if data[i,1] == nproc], label = labeltoken+"-n"+str(nproc))
+        print [np.sqrt(x) for i,x in enumerate(data[:,0]) if data[i,1]==nproc],[x for i,x in enumerate(data[:,ndatum]) if data[i,1] == nproc]
     ax.set_yscale('log')
-    ax.set_xscale('log')
+    ax.set_ylabel(ylabel)
+    ax.set_xlabel(xlabel)
     setticks(ax,xlog=True,ylog=True)
     ax.legend(loc='upper left', prop={'size':9})
+    pylab.savefig('./'+labeltoken+'.pdf')
+
 
 
 if __name__ =="__main__":
     setfont()
     data = []
-    fig = pylab.figure(figsize=(5,5))
+    fig = pylab.figure(figsize=(5.5,5))
     ax = pylab.subplot(1,1,1)
 
-    blocking = []
-    nonblocking = []
-    headtohead = []
-    messagesize = []
-    count = 0
+    # matrixsize = []
+    # nprocs = []
+    # t_ag = []
+    # t_ring = []
+    # tcomm_ag = []
+    # tcomm_ring = []
+    # perf_ag = []
+    # perf_ring = []
+    # data = []
+
+    matsize,nprocs,t_ag,t_ring,tcomm_ag,tcomm_ring,perf_ag,perf_ring = [0 for x in range(0,8)]
     for i,line in enumerate(open("./bluewaters.dat")):
-        if len(line.split()) == 0:
+        line = line.split()
+        if len(line) == 0:
             continue
-        if '####' in line:
-            count += 1
-            if count==1:
-                continue
-            blocking = np.asarray(blocking)
-            nonblocking = np.asarray(nonblocking)
-            headtohead = np.asarray(headtohead)
-            messagesize = np.asarray(messagesize)
-            data.append([messagesize, blocking, nonblocking, headtohead])
-            blocking = []
-            nonblocking = []
-            headtohead = []
-            messagesize = []
-            continue
-        elif 'Message' in line:
-            messagesize.append(float(line.split()[4]))
-        if 'Head-to-head' in line:
-            headtohead.append(float(line.split()[6]))
-        elif 'Non-blocking' in line:
-            nonblocking.append(float(line.split()[6]))
-        elif 'Blocking' in line:
-            blocking.append(float(line.split()[6]))
+        if len(line) == 4:
+            if i != 0:
+                data.append([matsize,nprocs,t_ag,t_ring,tcomm_ag,tcomm_ring,perf_ag,perf_ring])
+            matsize = float(line[0])
+            nprocs = float(line[1])
+            t_ag = float(line[2])
+            t_ring = float(line[3])
+        if 'Perf' in line[0]:
+            perf_ag = float(line[3])
+            perf_ring = float(line[4])
+        elif len(line) == 2:
+            tcomm_ag = float(line[0])
+            tcomm_ring = float(line[1])
 
-    blocking = np.asarray(blocking)
-    nonblocking = np.asarray(nonblocking)
-    headtohead = np.asarray(headtohead)
-    messagesize = np.asarray(messagesize)
-    data.append([messagesize, blocking, nonblocking, headtohead])
+    data = np.asarray(data)
+    #print data[:,0]
 
 
-    plot_size_v_time_fit(ax,data)
-    pylab.savefig("./bluewaters_fit.pdf")
+
+    #plot_time_matrix_size(ax,data,2,xlabel="Matrix Size [dword]",ylabel="Time [s]",labeltoken="Tag")
+    #plot_time_matrix_size(ax,data,3,xlabel="Matrix Size [dword]",ylabel="Time [s]",labeltoken="Tring")
+    #plot_time_matrix_size(ax,data,5,xlabel="Matrix Size [dword]",ylabel="Time [s]",labeltoken="Tcomm-ring")
+    plot_time_matrix_size(ax,data,7,xlabel="Matrix Size [dword]",ylabel=" Operations [1/thread/sec]",labeltoken="Ops-ring")
+    #pylab.savefig("./bluewaters_fit.pdf")
     #pylab.show()

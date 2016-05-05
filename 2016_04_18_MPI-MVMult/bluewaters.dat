@@ -1,88 +1,47 @@
-----------------------------------------
-Begin Torque Prologue on nid25331
-at Tue Apr 19 08:24:27 CDT 2016
-Job Id:			4466999.bw
-Username:		tra836
-Group:			TRAIN_babq
-Job name:		mmvmpi
-Requested resources:	neednodes=64:ppn=32:xe,nodes=64:ppn=32:xe,walltime=00:10:00
-Queue:			normal
-Account:		babq
-End Torque Prologue:  0.049 elapsed
-----------------------------------------
-
-
-
-
-begin
 1024	128	5.29e-05	4.46e-04
 	5.79e-05	3.72e-04
 Perf per core	3.10e+08	3.67e+07
-Application 37535437 resources: utime ~53s, stime ~77s, Rss ~21584, inblocks ~37642, outblocks ~6148
-end
-begin
+
 1024	256	5.10e-05	9.33e-04
 	6.41e-05	7.62e-04
 Perf per core	1.61e+08	8.78e+06
-Application 37535473 resources: utime ~297s, stime ~153s, Rss ~21584, inblocks ~79187, outblocks ~12294
-end
-begin
+
 1024	512	5.41e-05	1.93e-03
 	8.42e-05	1.89e-03
 Perf per core	7.57e+07	2.12e+06
-Application 37535488 resources: utime ~255s, stime ~316s, Rss ~21584, inblocks ~164065, outblocks ~24604
-end
-begin
+
 1024	1024	7.10e-05	4.10e-03
 	1.09e-04	4.07e-03
 Perf per core	2.88e+07	5.00e+05
-Application 37535501 resources: utime ~761s, stime ~632s, Rss ~21584, inblocks ~334558, outblocks ~49217
-end
-begin
+
 16384	128	9.33e-03	9.53e-03
 	4.69e-04	4.75e-04
 Perf per core	4.50e+08	4.40e+08
-Application 37535511 resources: utime ~125s, stime ~80s, Rss ~33656, inblocks ~38300, outblocks ~6153
-end
-begin
+
 16384	256	6.81e-03	5.84e-03
 	1.96e-03	8.76e-04
 Perf per core	3.08e+08	3.59e+08
-Application 37535515 resources: utime ~204s, stime ~160s, Rss ~26376, inblocks ~82080, outblocks ~12309
-end
-begin
+
 16384	512	4.86e-03	4.77e-03
 	2.03e-03	1.61e-03
 Perf per core	2.16e+08	2.20e+08
-Application 37535522 resources: utime ~320s, stime ~318s, Rss ~22320, inblocks ~169720, outblocks ~24617
-end
-begin
+
 16384	1024	1.91e-03	5.45e-03
 	5.06e-04	3.30e-03
 Perf per core	2.75e+08	9.63e+07
-Application 37535527 resources: utime ~709s, stime ~627s, Rss ~21584, inblocks ~338879, outblocks ~49220
-end
-begin
+
 102400	128	4.06e-01	3.47e-01
 	1.64e-03	2.31e-03
 Perf per core	4.04e+08	4.72e+08
-Application 37535531 resources: utime ~2768s, stime ~205s, Rss ~659956, inblocks ~37351, outblocks ~6145
-end
-begin
+
 102400	256	2.05e-01	1.70e-01
 	2.16e-03	2.50e-03
 Perf per core	3.99e+08	4.81e+08
-Application 37535582 resources: utime ~2832s, stime ~285s, Rss ~339636, inblocks ~78776, outblocks ~12289
-end
-begin
+
 102400	512	1.03e-01	8.35e-02
 	3.22e-03	2.16e-03
 Perf per core	3.99e+08	4.91e+08
-Application 37535599 resources: utime ~4373s, stime ~507s, Rss ~179668, inblocks ~162160, outblocks ~24577
-end
-begin
+
 102400	1024	5.25e-02	4.48e-02
 	2.13e-03	2.97e-03
 Perf per core	3.90e+08	4.57e+08
-Application 37535608 resources: utime ~3264s, stime ~757s, Rss ~100140, inblocks ~334618, outblocks ~49234
-end
